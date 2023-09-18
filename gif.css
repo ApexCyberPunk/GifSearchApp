@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: black;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: aquamarine;
+    color: black;
+    border-radius: .5em;
+    font-weight: 500;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    width: 100%;
+    max-width: 50em;
+    margin: 1em auto;
+    padding: .5em;
+}
+
+.search-container input {
+    padding: 1em;
+    border-radius: .5em;
+    font-weight: 400;
+}
+
+.wrapper {
+
+}
+
+.loader {
+    display: none;
+    height: 15em;
+    width: 15em;
+    border: 3.5em solid darkblue;
+    border-radius: 50%;
+    border-top-color: aquamarine;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: spin 3s infinite;
+    left: 50%;
+    top: 50%;
+}
+
+@keyframes spin {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+
+
